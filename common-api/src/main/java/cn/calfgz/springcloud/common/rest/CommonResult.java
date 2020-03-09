@@ -5,7 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * @author zhongwm
+ * @author calfgz
  * @description: 通用结果
  * @date 2020-03-07 14:20
  */

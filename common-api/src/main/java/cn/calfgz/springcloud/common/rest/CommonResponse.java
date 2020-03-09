@@ -4,7 +4,7 @@ package cn.calfgz.springcloud.common.rest;
 /**
  * 封装结果
  *
- * @author zhongwm
+ * @author calfgz
  * @create 2018-11-20 13:57
  */
 public class CommonResponse {

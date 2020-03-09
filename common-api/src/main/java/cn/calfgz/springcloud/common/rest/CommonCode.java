@@ -4,7 +4,7 @@ package cn.calfgz.springcloud.common.rest;
 /**
  * 返回结果类型
  *
- * @author zhongwm
+ * @author calfgz
  * @create 2018-11-20 11:46
  */
 public enum CommonCode {

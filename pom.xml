@@ -13,6 +13,7 @@
         <module>consumer-order</module>
         <module>eureka-server</module>
         <module>payment-zookeeper</module>
+        <module>consumer-order-zk</module>
     </modules>
     <packaging>pom</packaging>
 
