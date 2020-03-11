@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.UUID;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author calfgz
@@ -23,5 +24,15 @@ public class PaymentController {
     @GetMapping("/payment/get/{id}")
     public CommonResult get(@PathVariable("id") Long id) {
         return CommonResponse.okRsp( "port:" + serverPort + ", id:" + id + ", uuid:" + UUID.randomUUID());
+    }
+
+    @GetMapping("/payment/timeout")
+    public CommonResult timeout() {
+        try {
+            TimeUnit.SECONDS.sleep(3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return CommonResponse.okRsp(serverPort);
     }
 }
