@@ -22,6 +22,7 @@
         <module>hystrix-dashboard</module>
         <module>gateway</module>
         <module>config-center</module>
+        <module>config-client</module>
     </modules>
     <packaging>pom</packaging>
 

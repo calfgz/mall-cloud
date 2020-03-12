@@ -1,4 +1,4 @@
 
-spring:
-  application:
+app:
+  info:
     name: git-test-config
