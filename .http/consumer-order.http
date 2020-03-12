@@ -10,3 +10,9 @@ GET {{root}}/consumer/payment/get/4
 GET {{root}}/consumer/payment/create?serial=988&title=0jdfief
 
 ###
+POST http://localhost:3355/actuator/refresh
+
+###
+POST http://localhost:3344/actuator/bus-refresh
+
+###
