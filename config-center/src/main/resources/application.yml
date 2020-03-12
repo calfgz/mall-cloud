@@ -8,10 +8,10 @@ spring:
     config:
       server:
         git:
-          # uri: git@github.com:zzyybs/springcloud-config.git  #github上面的git仓库名字
+          #github上面的git仓库名字
           uri: git@github.com:calfgz/mall-cloud.git
           search-paths:
-            - config/application
+            - config/
       label: master  #读取分支
     consul:
       host: 127.0.0.1
