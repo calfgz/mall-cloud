@@ -21,6 +21,7 @@
         <module>consumer-order-feign-hystrix-consul</module>
         <module>hystrix-dashboard</module>
         <module>gateway</module>
+        <module>config-center</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -109,6 +110,16 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-gateway</artifactId>
+                <version>2.2.2.RELEASE</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-config-server</artifactId>
+                <version>2.2.2.RELEASE</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-config</artifactId>
                 <version>2.2.2.RELEASE</version>
             </dependency>
             <dependency>
