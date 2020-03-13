@@ -35,4 +35,9 @@ public class PaymentController {
         }
         return CommonResponse.okRsp(serverPort);
     }
+
+    @GetMapping("/payment/zipkin")
+    public CommonResult zipkin() {
+        return CommonResponse.okRsp("welcome to zipkin.");
+    }
 }
