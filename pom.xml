@@ -25,6 +25,8 @@
         <module>config-client</module>
         <module>stream-provider</module>
         <module>stream-consumer</module>
+        <module>payment-nacos</module>
+        <module>consumer-order-nacos</module>
     </modules>
     <packaging>pom</packaging>
 
