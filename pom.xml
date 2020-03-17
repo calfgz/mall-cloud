@@ -27,6 +27,7 @@
         <module>stream-consumer</module>
         <module>payment-nacos</module>
         <module>consumer-order-nacos</module>
+        <module>sentinel-service</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -162,6 +163,11 @@
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
                 <version>2.2.0.RELEASE</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.csp</groupId>
+                <artifactId>sentinel-datasource-nacos</artifactId>
+                <version>1.7.1</version>
             </dependency>
 
             <dependency>

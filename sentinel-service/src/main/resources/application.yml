@@ -1,0 +1,30 @@
+server:
+  port: 8801
+
+spring:
+  application:
+    name: sentinal-service
+
+  mvc:
+    throw-exception-if-no-handler-found: true
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        namespace: 5891fc4c-223b-40db-9fac-6d6609d4b917
+        group: DEV_GROUP
+
+    sentinel:
+      transport:
+        dashboard: localhost:8080
+        port: 8719
+
+#  ${spring.application.name}-${spring.profile.active}.${spring.cloud.nacos.config.file-extension}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
