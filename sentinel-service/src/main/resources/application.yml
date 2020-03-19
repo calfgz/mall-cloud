@@ -19,6 +19,15 @@ spring:
       transport:
         dashboard: localhost:8080
         port: 8719
+      # 流控规则持久化到nacos
+      datasource:
+        dsl:
+          nacos:
+            server-addr: localhost:8848
+            data-id: ${spring.application.name}
+            group-id: DEV_GROUP
+            data-type: json
+            rule-type: flow
 
 #  ${spring.application.name}-${spring.profile.active}.${spring.cloud.nacos.config.file-extension}
 
