@@ -22,7 +22,7 @@ public class TestController {
     @GetMapping("/test/a")
     @SentinelResource
     public String testa() {
-        return Thread.currentThread().getName() + ", test A.";
+        return Thread.currentThread().getName() + " , test A.";
     }
 
     @GetMapping("/test/b")
